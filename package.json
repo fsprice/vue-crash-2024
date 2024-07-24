@@ -2,10 +2,13 @@
   "name": "vue-crash-2024",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "homepage": "https://fsprice.github.io/vue-crash-2024",
+  "type": "module",  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "vite build && gh-pages -d dist",
     "backend": "json-server --watch db.json --port 5000",
     "preview": "vite preview"
   },
@@ -17,6 +20,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "concurrently": "^8.2.2",
+    "gh-pages": "^6.1.1",
     "vite": "^5.3.1"
   }
 }
