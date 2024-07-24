@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "homepage": "https://fsprice.github.io/vue-crash-2024",
-  "type": "module",  
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
