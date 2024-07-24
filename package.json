@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "vite build && gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "backend": "json-server --watch db.json --port 5000",
     "preview": "vite preview"
   },
